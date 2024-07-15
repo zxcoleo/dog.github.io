@@ -5,7 +5,7 @@ function updateCountdown() {
     // Si no hay una fecha objetivo almacenada o si la fecha es inválida, establecer una nueva fecha objetivo
     if (!targetDate || isNaN(new Date(targetDate))) {
         targetDate = new Date(); // Fecha actual
-        targetDate.setDate(targetDate.getDate() + 3); // Sumar 4 días
+        targetDate.setDate(targetDate.getDate() + 9); // Sumar 4 días
         targetDate.setHours(19); // Establecer las horas a 19:00
         targetDate.setMinutes(38); // Establecer los minutos a 38
         targetDate.setSeconds(26); // Establecer los segundos a 26
@@ -412,7 +412,7 @@ document.querySelectorAll('[id^="direccion-"]').forEach(function(direccion) {
   
       
       let bnbPrice = 0;
-      const tokenPriceInUSD = 0.00018; // PRECIO TOKEN
+      const tokenPriceInUSD = 0.0001814; // PRECIO TOKEN
       let conversionRate = tokenPriceInUSD;
       
       async function fetchBNBPrice() {

@@ -425,7 +425,7 @@ document.querySelectorAll('[id^="direccion-"]').forEach(function(direccion) {
   
       
       let bnbPrice = 0;
-      const tokenPriceInUSD = 0.0000001; // PRECIO TOKEN
+      const tokenPriceInUSD = 0.0001814; // PRECIO TOKEN
       let conversionRate = tokenPriceInUSD;
       
       async function fetchBNBPrice() {
